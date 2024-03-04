@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../home/includes/slick.css">
+    <link rel="stylesheet" href="../home/includes/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+</head>
+<body>
+    <!-- -------------------------header-------------------------------- -->
+    <header>
+        <header id="navbar">
+            <section class="container " id="Main" >
+                <nav class="main-nav">
+                    <div class="logo">
+                        <a href="../index.html">     <img src="../home/images/bradley-logo.svg" alt="Logo"></a>
+                    </div>
+    
+                    <div class="menu-icon" onclick="togglePopup()"><img src="./images/nav-btn.svg" alt="menu"></div>
+    
+                </nav>
+            </section>
+        </header>
+    
+        <section id="popupNav">
+            <div id="container-two">
+                <div class="popup-nav">
+                    <header>
+                        <div class="main-box">
+                            <div class="box">
+                                <div class="second-logo">
+                                    <a href="../index.html"><img src="./images/bradley-logo.svg" alt="Logo"></a>
+                                </div>
+                                <div class="close-icon" onclick="togglePopup()">
+                                    <img src="./images/popupclose.avif" alt="close-icon">
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <main>
+                        <div class="link-box">
+                            <div class="one ">
+                                <div class="link-1">
+                                    <a href="../home/home.html">Home</a>
+                                </div>
+                                <div class="arrow">
+                                    <img src="./images/arrow.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="link-box">
+                            <div class="one">
+                                <div class="link-2">
+                                    <a href="../about_us/about.html">About</a>
+                                </div>
+                                <div class="arrow">
+                                    <img src="./images/arrow.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="link-box">
+                            <div class="one">
+                                <div class="link-3">
+                                    <a href="../projects/project.html">Project</a>
+                                </div>
+                                <div class="arrow">
+                                    <img src="./images/arrow.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="link-box">
+                            <div class="one">
+                                <div class="link-4">
+                                    <a href="../faq/faq.html">Faq</a>
+                                </div>
+                                <div class="arrow">
+                                    <img src="./images/arrow.svg" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    <footer>
+                        <section class="container-3">
+                            <div class="footer-content">
+    
+                                <div class="small-footer">
+    
+    
+    
+                                    <p class="contact-info">
+                                        <span>E-MAIL</span>
+                                        <br>
+                                        <br>
+                                        <a href="mailto:contact@thebpi.com">contact@thebpi.com</a>
+                                        <br>
+                                        <br>
+                                        <a href="mailto:contact@certified-cs.co">contact@certified-cs.co</a>
+                                    </p>
+                                    <p class="contact-info-2">
+                                        <span>PHONE</span>
+                                        <br>
+                                        <br>
+                                        <span class="number"> +1 615-401-9987</span>
+                                    </p>
+    
+                                    <button class="contact-button">CONTACT US<i class="fas fa-arrow-right"></i></button>
+                                   
+                                
+                                </div>
+    
+                            </div>
+                        </section>
+                    </footer>
+                </div>
+            </div>
+            <div id="contact-form-overlay" class="overlays">
+                <div class="contact-form">
+                  <h2>Contact Us</h2>
+                  <form id="contact-form">
+        
+                    <div class="form-group">
+                      <input  class="abc" type="text" placeholder="Name" id="name" name="name" required>
+                    </div>
+        
+        
+                    <div class="form-group">
+                      <input  class="abc" type="email" placeholder="Email:" id="email" name="email" required>
+                    </div>
+        
+                    <input class="abc" type="number" placeholder="Number:" id="email" name="email" required>
+                    <textarea id="message" placeholder="Message:" name="message" required></textarea>
+        
+                    <button class="contact-button " id="submit">Submit<i class="fa-solid fa-arrow-right"></i></button>
+                  </form>
+                  <span class="close-button" onclick="closeContactForm()"><img src="./images/popupclose.avif" alt=""></span>
+                </div>
+              </div>
+        </section>
+    </header>
+    <!-- --------------------------------main------------------------------ -->
+    <main id="main">
+        <section >
+            <div class="container" >
+                <div class="head">
+                    <div class="h1" >
+                        <h1>About us</h1>
+                    </div>
+                    
+                        <button class="lm_btn1" id="scrollToTeam"><i class="fa-solid fa-arrow-right"></i>LEARN MORE</button>
+                       
+                 </div>
+                <div class="a_img1">
+                    <img src="images/a_img1.jpg" alt="">
+                </div>
+                <div class="text1">
+                    <p>Welcome to The Bradley Projects, where innovation meets evolution in the world of built environments. As a dynamic and forward-thinking architecture firm, a trailblazing real estate development company - The Bradley Development Group, and a top-tier commercial general contractor - Certified Construction Services, we redefine the boundaries of possibility.
+
+                        At The Bradley Projects, we breathe life into audacious concepts that challenge the status quo. With our unwavering commitment to cutting-edge design, we shape spaces that inspire, captivate, and push the boundaries of what's conceivable. Our vertically-integrated approach empowers us to craft exceptional projects from inception to completion, seamlessly blending visionary architecture with masterful construction and development expertise.</p>
+                    <div class="icon">
+                        <img src="images/logo.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="container"> -->
+                <div class="images1">
+                    <div class="a_aimg2">
+                        <img src="images/a_img2.jpg" alt="">
+                    </div>
+                    <div class="a_img3">
+                        <img src="images/a_img3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text2">
+                    <h4>Pushing the Limits of Architecture to Provide World-class Design through Quality Construction.<h4>
+                    <div class="icon">
+                        <img src="images/logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="text3">
+                <div class="text3_1">
+                    <p>Our diverse team fosters community-driven urban development. Passion fuels imaginative designs in SoCal and Southeastern US, pushing architectural boundaries, regardless of project constraints. A united, integrated team achieves purposeful excellence.Passionate team focused on community-minded, urban development. Imaginative designs blending into existing cities, Southern California roots and Southeastern US presence. All projects push architectural limits for world-class design. Today, collaboration crucial for purposeful, high-quality developments.These days, achieving purposeful, high-quality architectural developments requires a team of like-minded individuals with vertically-integrated skill sets.</p>
+                </div>
+                <div class="text3_2">
+                    <p>With unwavering diligence, we analyze projects, leveraging experience, flexibility, and creativity for real-time problem-solving, delivering unparalleled value. Since 2006, we've honed our purposeful, vertically-integrated real estate development approach. In 2009, we pioneered a fully-licensed general contracting division, evolving it into the formidable Certified Construction Services in 2018. This integration has forged a well-rounded, unparalleled approach to the industry.With unwavering diligence, we analyze projects, leveraging experience, flexibility, and creativity for real-time problem-solving and unmatched value creation. Since 2006, we've fostered a purposeful, vertically-integrated real estate development approach.</p>
+                </div>
+            </div>
+            <div class="a_img4">
+                <img src="images/a_img4.jpg" alt="">
+            </div>
+            <div class="text4">
+                <div class="icon">
+                    <img src="images/logo.svg" alt="">
+                </div>
+                <p>We design, build, and develop our projects with partners and investors. We also collaborate with, design, and build for clients who appreciate thoughtful and progressive design. Our expertise is driven by a vertically-integrated approach, and our work ranges from single and multifamily residential projects to high-end restaurants, retail, and institutional projects. We strive to develop clean, modern, and progressive concepts that celebrate context, local community and showcase architecture as an art form.</p>
+            </div>
+            <div class="images2">
+                <div class="a_img5">
+                  
+                    <h1>Development</h1>
+                    <a href="../home/otherhtml/dev.html"><button class="lm_btn2"><i class="fa-solid fa-arrow-right"></i>LEARN MORE</button></a>
+                </div>
+                <div class="a_img6">
+                  
+                    <h1>Architecture</h1>
+                    <a href="../home/otherhtml/arc.html"><button class="lm_btn3"><i class="fa-solid fa-arrow-right"></i>LEARN MORE</button></a>
+                </div>
+                <div class="a_img7">
+                    
+                    <h1>Construction</h1>
+                    <a href="../home/otherhtml/cons.html"><button class="lm_btn4"><i class="fa-solid fa-arrow-right"></i>LEARN MORE</button></a>
+                </div>
+            </div> 
+            <div class="text5" id="team">
+                <h2>THE_TEAM</h2>
+                <p>Welcome to our world of visionary real estate development, where innovation meets design excellence, and creativity knows no bounds. Our seamless integration of architecture, design, and construction empowers us to craft awe-inspiring built environments that transcend the ordinary.
+                At the heart of our success lies the power of collaboration. Together, we embark on a journey totransform your dreams into reality, ensuring that your unique goals are not only met but surpassedwith finesse. Our solution-oriented approach paves the way for unprecedented efficiency, while ourstreamlined communication guarantees a hassle-free experience from inception to completion.</p>
+            </div>
+            <div class="team-container">
+            <div class="flip">
+                <div class="main">
+                    
+                     <img src="images/f_img1.jpg" alt="">
+                    <div class="card">
+                           
+                        <div class="overlay">
+                            
+                            <div class="text-container">
+                                <p>Yousif is a recognized business and community leader whose relentless drive to understand his clients and their evolving needs inspired him to found Ghafari Associates in 1982. As a young engineer working primarily with clients in the manufacturing sector, Yousif recognized the potential of computer-aided design (CAD) technology at a time when the industry still relied on paper drawings as its standard. He saw a widely untapped opportunity to improve quality and efficiency in project delivery and decided to build his own company from the ground up. He established Ghafari in Southeast Michigan as a CAD services provider, laying the foundation for a proud tradition of innovation and client care that continues today.</p>
+                               
+                            </div>
+                        </div>
+                             <div class="text">
+                                <h3>Yousif B. Ghafari, PE </h3> 
+                                <p>Chairman + Founder</p>
+                            </div>
+                           
+                    
+                    </div>    
+               </div>
+
+                <div class="main">
+                        <img src="images/f_img2.jpg" alt="">
+                     <div class="card">
+                        <div class="overlay">
+                        
+                            <div class="text-container">
+                                <p>Kouhaila (Ki) Hammer is a recognized business and community leader whose relentless drive to understand his clients and their evolving needs inspired him to found Ghafari Associates in 1982. As a young engineer working primarily with clients in the manufacturing sector, Yousif recognized the potential of computer-aided design (CAD) technology at a time when the industry still relied on paper drawings as its standard. He saw a widely untapped opportunity to improve quality and efficiency in project delivery and decided to build his own company from the ground up. He established Ghafari in Southeast Michigan as a CAD services provider, laying the foundation for a proud tradition of innovation and client care that continues today.</p>
+                            </div>
+                        </div>
+                         <div class="text">
+                            <h3>Kouhaila (Ki) Hammer
+                            </h3>
+                            <p>President + CEO</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main">
+                    <img src="images/f_img3.jpg" alt="">
+                    <div class="card">
+                        <div class="overlay">
+                            
+                            <div class="text-container">
+                            
+                                <p>Scott Adams is a recognized business and community leader whose relentless drive to understand his clients and their evolving needs inspired him to found Ghafari Associates in 1982. As a young engineer working primarily with clients in the manufacturing sector, Yousif recognized the potential of computer-aided design (CAD) technology at a time when the industry still relied on paper drawings as its standard. He saw a widely untapped opportunity to improve quality and efficiency in project delivery and decided to build his own company from the ground up. He established Ghafari in Southeast Michigan as a CAD services provider, laying the foundation for a proud tradition of innovation and client care that continues today.</p>
+                            </div>
+                        </div>
+                            <div class="text">
+                                <h3>Scott Adams</h3>
+                                <p>Director+ Virtual Designer</p>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="main">
+                    <img src="images/f_img4.jpg" alt="">
+                    <div class="card">
+                        <div class="overlay">
+                            
+                            <div class="text-container">
+                            
+                                <p>Vikram Bapat is a recognized business and community leader whose relentless drive to understand his clients and their evolving needs inspired him to found Ghafari Associates in 1982. As a young engineer working primarily with clients in the manufacturing sector, Yousif recognized the potential of computer-aided design (CAD) technology at a time when the industry still relied on paper drawings as its standard. He saw a widely untapped opportunity to improve quality and efficiency in project delivery and decided to build his own company from the ground up. He established Ghafari in Southeast Michigan as a CAD services provider, laying the foundation for a proud tradition of innovation and client care that continues today.</p>
+                            </div>
+                        </div>
+                             <div class="text">
+                                    <h3>Vikram Bapat</h3>
+                                    <p>Managing Director, India Operations</p>
+                             </div>
+                            
+                     </div>
+                </div>
+
+                <div class="main">
+                    <img src="images/f_img5.jpg" alt="">
+                    <div class="card">
+                        <div class="overlay">
+                            
+                            <div class="text-container">
+                            
+                                <p>Bob Bell is a recognized business and community leader whose relentless drive to understand his clients and their evolving needs inspired him to found Ghafari Associates in 1982. As a young engineer working primarily with clients in the manufacturing sector, Yousif recognized the potential of computer-aided design (CAD) technology at a time when the industry still relied on paper drawings as its standard. He saw a widely untapped opportunity to improve quality and efficiency in project delivery and decided to build his own company from the ground up. He established Ghafari in Southeast Michigan as a CAD services provider, laying the foundation for a proud tradition of innovation and client care that continues today.</p>
+                            </div>
+                        </div>
+                            <div class="text">
+                                <h3>Bob Bell</h3>
+                                <p>Chief Information Officer</p>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="main">
+                    <img src="images/f_img6.jpg" alt="">
+                   <div class="card">
+                        <div class="overlay">
+                        
+                            <div class="text-container">
+                                
+                                <p>Scott Bernth is a recognized business and community leader whose relentless drive to understand his clients and their evolving needs inspired him to found Ghafari Associates in 1982. As a young engineer working primarily with clients in the manufacturing sector, Yousif recognized the potential of computer-aided design (CAD) technology at a time when the industry still relied on paper drawings as its standard. He saw a widely untapped opportunity to improve quality and efficiency in project delivery and decided to build his own company from the ground up. He established Ghafari in Southeast Michigan as a CAD services provider, laying the foundation for a proud tradition of innovation and client care that continues today.</p>
+                            </div>
+                        </div>
+
+                            <div class="text">
+                            <h3>Scott bernth</h3>
+                                <p> Mechanical Engineer</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="main">
+                    <img src="images/f_img7.jpg" alt="">
+                    <div class="card">
+                        <div class="overlay">
+                        
+                            <div class="text-container">
+                                
+                                <p>Paul Blanchard is a recognized business and community leader whose relentless drive to understand his clients and their evolving needs inspired him to found Ghafari Associates in 1982. As a young engineer working primarily with clients in the manufacturing sector, Yousif recognized the potential of computer-aided design (CAD) technology at a time when the industry still relied on paper drawings as its standard. He saw a widely untapped opportunity to improve quality and efficiency in project delivery and decided to build his own company from the ground up. He established Ghafari in Southeast Michigan as a CAD services provider, laying the foundation for a proud tradition of innovation and client care that continues today.</p>
+                            </div>
+                        </div>
+                            <div class="text">
+                                <h3>Paul Blanchard</h3>
+                                <p>Assistant Manager</p>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="main">
+                    <img src="images/f_img8.jpg" alt="">
+                  <div class="card">
+                    <div class="overlay">
+                        
+                        <div class="text-container">
+                           
+                            <p>Jeff Brownis a recognized business and community leader whose relentless drive to understand his clients and their evolving needs inspired him to found Ghafari Associates in 1982. As a young engineer working primarily with clients in the manufacturing sector, Yousif recognized the potential of computer-aided design (CAD) technology at a time when the industry still relied on paper drawings as its standard. He saw a widely untapped opportunity to improve quality and efficiency in project delivery and decided to build his own company from the ground up. He established Ghafari in Southeast Michigan as a CAD services provider, laying the foundation for a proud tradition of innovation and client care that continues today.</p>
+                        </div>
+                    </div>
+                        <div class="text">
+                            <h3>Jeff Brown, PE</h3>
+                            <p>Engineering Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main">
+                    <img src="images/f_img9.jpg" alt="">
+                    <div class="card">
+                        <div class="overlay">
+                        
+                            <div class="text-container">
+                                
+                                <p>Andrew Cottrelis a recognized business and community leader whose relentless drive to understand his clients and their evolving needs inspired him to found Ghafari Associates in 1982. As a young engineer working primarily with clients in the manufacturing sector, Yousif recognized the potential of computer-aided design (CAD) technology at a time when the industry still relied on paper drawings as its standard. He saw a widely untapped opportunity to improve quality and efficiency in project delivery and decided to build his own company from the ground up. He established Ghafari in Southeast Michigan as a CAD services provider, laying the foundation for a proud tradition of innovation and client care that continues today.</p>
+                            </div>
+                        </div>
+                            <div class="text">
+                                <h3>Andrew Cottrel </h3> 
+                                <p>Director of Design</p>
+                                </div>
+                    </div>
+                </div> 
+    
+            </div> 
+            
+            </div>
+            
+        </section>
+    </main>
+    <!-- -----------------------footer--------------------------- -->
+    <footer id="mainfoot">
+        <div class="foot">
+            <div class="content">
+                <div class="footer-item" id="right">
+                    <address>
+                        <h4>Address</h4>
+                    <p>Karachi, Pakistan</p>
+                    <p>1812 Morena Street
+                        Nashville, Tennessee 37208</p>
+                    <p>CodeGirls:"Vertically Built" </p>
+                    </address>
+                </div>
+                <div class="footer-item">
+                    <h4>Email</h4>
+                    <p><a href="mailto:verticallybuilt@example.com">verticallybuilt@example.com</a></p>
+                    <p><a href="mailto:alimaheen2004@gmail.com">alimaheen2004@gmail.com</a></p>
+                    <p><a href="mailto:duashehzad@gmail.com">duashehzad@gmail.com</a></p>
+                </div>
+                <div class="footer-item">
+                    <h4>Phone</h4>
+                    <p><a href="tel:+9232154678">+92 32154678</a></p>
+                    <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+                    <p><a href="tel:+16154019987">+1 615-401-9987</a></p>
+                </div>
+                <div class="footer-item">
+                    <h4>Social</h4>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div id="logo-logo">
+                    <a href="../index.html"><img src="./images/bradley-logo.svg" alt="Company Logo"></a>
+                    <p class="small-text">© 2023 Your Company. All rights reserved.</p>
+                </div> 
+            </div>
+        </div>
+        <button class="lm_btn5" id="scrollToMain"><i class="fa-solid fa-arrow-up"></i>Scroll up</button>
+    </footer>
+    
+    <!-- <script src="jquery.js"></script> -->
+    <script src="../home/includes/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

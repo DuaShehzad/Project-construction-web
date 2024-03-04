@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <link rel="stylesheet" href="./video/style.css">
+  <title>Your Page</title>
+</head>
+<body>
+  <div class="video-container">
+    <video autoplay muted loop>
+      <source src="video/BG.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="logo">
+      <img src="./video/bradley-logo.svg" alt="Logo">
+    </div>
+    <div class="contact-button" id="button">
+      <button><p><a href="">Contact</a></p></button>
+    </div>
+    <div class="content">
+      <div class="centered-text">
+        <p>VERTICALLY BUILT</p>
+        
+        <button class="learn"><a href="home/home.html">Explore More</a></button>
+        <div class="social-icons">
+          <a href="#"><img src="./video/instagram-icon-6496194_640.webp" alt="Facebook"></a>
+          <a href="#"><img src="./video/free-twitter-logo-icon-2429-thumb.png" alt="Twitter"></a>
+          <a href="#"><img src="./video/circle-linkedin-512.webp" alt="Instagram"></a>
+          <a href="#"><img src="./video/Octicons-mark-github.svg.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact-form-overlay" class="overlay">
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+
+        <div class="form-group">
+          <input class="abc" type="text" placeholder="Name" id="name" name="name" required>
+        </div>
+
+
+        <div class="form-group">
+          <input class="abc" type="email" placeholder="Email:" id="email" name="email" required>
+        </div>
+
+        <input class="abc" type="number" placeholder="Number:" id="email" name="email" required>
+        <textarea id="message" placeholder="Message:" name="message" required></textarea>
+
+        <button class="contact-button " id="submit">Submit<i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+      <span class="close-button" onclick="closeContactForm()"><img src="./video/popupclose.avif" alt=""></span>
+    </div>
+  </div>
+  <script src="video/script.js"></script>
+</body>
+</html>

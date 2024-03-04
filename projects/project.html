@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include jQuery lightbox plugin -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+</head>
+<body>
+    <!-- -----------------------------header------------------ -->
+    <header id="navbar">
+        <section class="container">
+            <nav class="main-nav">
+                <div class="logo">
+               <a href="../index.html">     <img src="../home/images/bradley-logo.svg" alt="Logo"></a>
+                </div>
+
+                <div class="menu-icon" onclick="togglePopup()"><img src="../home/images/nav-btn.svg" alt="menu"></div>
+
+            </nav>
+        </section>
+    </header>
+
+    <section id="popupNav">
+        <div id="container-two">
+            <div class="popup-nav">
+                <header>
+                    <div class="main-box">
+                        <div class="box">
+                            <div class="second-logo">
+                                <a href="../index.html">     <img src="../home/images/bradley-logo.svg" alt="Logo"></a>
+                            </div>
+                            <div class="close-icon" onclick="togglePopup()">
+                                <img src="./prjs/popupclose.avif" alt="close-icon">
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    <div class="link-box">
+                        <div class="one ">
+                            <div class="link-1">
+                                <a href="../home/home.html">Home</a>
+                            </div>
+                            <div class="arrow">
+                                <img src="../home/images/arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link-box">
+                        <div class="one">
+                            <div class="link-2">
+                                <a href="../about_us/about.html">About</a>
+                            </div>
+                            <div class="arrow">
+                                <img src="../home/images/arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link-box">
+                        <div class="one">
+                            <div class="link-3">
+                                <a href="../projects/project.html">Project</a>
+                            </div>
+                            <div class="arrow">
+                                <img src="../home/images/arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link-box">
+                        <div class="one">
+                            <div class="link-4">
+                                <a href="../faq/faq.html">Faq</a>
+                            </div>
+                            <div class="arrow">
+                                <img src="../home/images/arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer>
+                    <section class="container-3">
+                        <div class="footer-content">
+
+                            <div class="small-footer">
+
+
+
+                                <p class="contact-info">
+                                    <span>E-MAIL</span>
+                                    <br>
+                                    <br>
+                                    <a href="mailto:contact@thebpi.com">contact@thebpi.com</a>
+                                    <br>
+                                    <br>
+                                    <a href="mailto:contact@certified-cs.co">contact@certified-cs.co</a>
+                                </p>
+                                <p class="contact-info-2">
+                                    <span>PHONE</span>
+                                    <br>
+                                    <br>
+                                    <span class="number"> +1 615-401-9987</span>
+                                </p>
+
+                                <button class="contact-button">CONTACT US<i class="fas fa-arrow-right"></i></button>
+                               
+                            
+                            </div>
+
+                        </div>
+                    </section>
+                </footer>
+            </div>
+        </div>
+        <div id="contact-form-overlay" class="overlay">
+            <div class="contact-form">
+              <h2>Contact Us</h2>
+              <form id="contact-form">
+    
+                <div class="form-group">
+                  <input  class="abc" type="text" placeholder="Name" id="name" name="name" required>
+                </div>
+    
+    
+                <div class="form-group">
+                  <input  class="abc" type="email" placeholder="Email:" id="email" name="email" required>
+                </div>
+    
+                <input  class="abc" type="number" placeholder="Number:" id="email" name="email" required>
+                <textarea id="message" placeholder="Message:" name="message" required></textarea>
+    
+                <button class="contact-button " id="submit">Submit<i class="fa-solid fa-arrow-right"></i></button>
+              </form>
+              <span class="close-button" onclick="closeContactForm()"><img src="../home/images/popupclose.avif" alt=""></span>
+            </div>
+          </div>
+    </section>
+
+    <!-- ----------------------------------main-------------------------------------->
+    <main id="Main">
+        <section>
+            <div class="container-gallery">
+                 <div class="head">
+                    <div class="textleft">
+                        <h1>Projects</h1>
+                    </div>
+                    <div class="textright">
+                        <button class="btn1" id="scrollToMap"><i class="fa-solid fa-arrow-down"></i>Location Map</button>
+                    </div>
+
+                </div> 
+                <div class="con-1">
+                    <!-- Box 2 -->
+                    <div id="box-2">
+                        <a href="./prjs/img1.jpg" data-lightbox="image-gallery" data-title="Alina">
+                            <div class="img1">
+                                <img src="./prjs/img1.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="text">
+                            <h2>Alina</h2>
+                            <p>806 Olympics st Nasville,USA</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Box 1 -->
+                    <div id="box-1">
+                        <a href="./prjs/img2.jpg" data-lightbox="image-gallery" data-title="Luna">
+                            <div class="img2">
+                                <img src="./prjs/img2.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="text">
+                            <h2>Luna</h2>
+                            <p>702, st Nasville,USA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="con-2">
+                    <!-- Box 1 -->
+                    <div id="box-1">
+                        <a href="./prjs/img3.jpg" data-lightbox="image-gallery" data-title="Ilume">
+                            <div class="img3">
+                                <img src="./prjs/img3.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="text">
+                            <h2>Ilume</h2>
+                            <p>astyne st Nasville,USA</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Box 2 -->
+                    <div id="box-2">
+                        <a href="./prjs/img4.jpg" data-lightbox="image-gallery" data-title="Clay street">
+                            <div class="img4">
+                                <img src="./prjs/img4.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="text">
+                            <h2>Clay street</h2>
+                            <p>clay street USA,809</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="con-3">
+                    <!-- Box 2 -->
+                    <div id="box-2">
+                        <a href="./prjs/img5.jpg" data-lightbox="image-gallery" data-title="Eve">
+                            <div class="img5">
+                                <img src="./prjs/img5.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="text">
+                            <h2>Eve</h2>
+                            <p>7806 Street Nasville,USA</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Box 1 -->
+                    <div id="box-1">
+                        <a href="./prjs/img6.jpg" data-lightbox="image-gallery" data-title="Ophelia">
+                            <div class="img6">
+                                <img src="./prjs/img6.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="text">
+                            <h2>Ophelia</h2>
+                            <p>406 clurgy st Nasville,USA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="con-4">
+                    <!-- Box 1 -->
+                    <div id="box-1">
+                        <a href="./prjs/img7.jpg" data-lightbox="image-gallery" data-title="Fisks">
+                            <div class="img7">
+                                <img src="./prjs/img7.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="text">
+                            <h2>Fisks</h2>
+                            <p>8062 cludy st urbaan,USA</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Box 2 -->
+                    <div id="box-2">
+                        <a href="./prjs/img8.jpg" data-lightbox="image-gallery" data-title="Boyd House">
+                            <div class="img8">
+                                <img src="./prjs/img8.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="text">
+                            <h2>Boyd House</h2>
+                            <p>8061 Mehary st Nasville,USA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="form">
+            <div class="Form">
+        
+                <form id="propertyForm" class="content-container">
+                    <div class="tes">
+                    <h2>Sell your Property</h2></div>
+                    <div class="fi">
+                        <div class="image-form">
+                            <img src="../projects/prjs/image.png" alt="">
+                            <div class="pic">
+                                <input type="file" name="picture" id="pic">
+                            </div>
+                        </div>
+                        <p class="pointo">upload images of your property</p>
+                    </div>
+                   <div class="form-content">
+                        <div class="form-group">
+                            <label for="fullName" class="point">Full Name</label>
+                            <input   class="abc" type="text" id="fullName" name="name" required>
+                        </div>
+                        <!-- <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div> -->
+                        <div class="form-group">
+                            <label for="phoneNumber" class="point">Phone Number</label>
+                            <input  class="abc" type="tel" id="phoneNumber" name="number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city" class="point">City</label>
+                            <select id="city" name="city">
+                                <option value="none" disabled selected>Select a city</option>
+                                <option value="city1" class="point">Karachi</option>
+                                <option value="city2" class="point">Lahore</option>
+                                <option value="city3" class="point">Islamabad</option>
+                                <option value="city3" class="point">punjab</option>
+                                <option value="city3" class="point">Sialkot</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="location" class="point">Location of Plot/house</label>
+                            <input  class="abc" type="text" id="location" name="location">
+                        </div>
+                     
+                        <div class="cheak">
+                            <input  class="abc" type="checkbox" name="check">
+                            <p class="pointo">I Accept All Their Company Policies</p>
+                        </div>
+                        <button type="submit" class="submit-button">Submit</button>
+                    </div>
+                </form>
+        </div>
+    </div>  
+                <div class="texts">
+                    <div class="textleft">
+                        <h1>Location Map</h1>
+                    </div>
+                    <div class="textright">
+                        <p>Discover our best projects</p>
+                    </div>
+
+                </div>
+                <div class="map" id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462118.02491053584!2d67.15546194999999!3d25.193202399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Karachi%20City%2C%20Sindh!5e0!3m2!1sen!2s!4v1692170334226!5m2!1sen!2s" width="1200" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+        </section>
+    </main>
+    <!-- ---------------------------footer------------------ -->
+    <footer id="mainfoot">
+        <div class="foot">
+            <div class="content">
+                <div class="footer-item" id="right">
+                    <address>
+                        <h4>Address</h4>
+                    <p>Karachi, Pakistan</p>
+                    <p>1812 Morena Street
+                        Nashville, Tennessee 37208</p>
+                    <p>CodeGirls:"Vertically Built" </p>
+                    </address>
+                </div>
+                <div class="footer-item">
+                    <h4>Email</h4>
+                    <p><a href="mailto:verticallybuilt@example.com">verticallybuilt@example.com</a></p>
+                    <p><a href="mailto:alimaheen2004@gmail.com">alimaheen2004@gmail.com</a></p>
+                    <p><a href="mailto:duashehzad@gmail.com">duashehzad@gmail.com</a></p>
+                </div>
+                <div class="footer-item">
+                    <h4>Phone</h4>
+                    <p><a href="tel:+9232154678">+92 32154678</a></p>
+                    <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+                    <p><a href="tel:+16154019987">+1 615-401-9987</a></p>
+                </div>
+                <div class="footer-item">
+                    <h4>Social</h4>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div id="logo-logo">
+                    <a href="../index.html"><img src="../home/images/bradley-logo.svg" alt="Company Logo"></a>
+                    <p class="small-text">© 2023 Your Company. All rights reserved.</p>
+                </div> 
+            </div>
+        </div>
+        <button class="btn1" id="scrollToMain"><i class="fa-solid fa-arrow-up"></i>Scoll up</button>
+    </footer>
+    <script>
+        
+    </script>
+<script src="./jquery.js"></script>
+
+</body>
+</html>

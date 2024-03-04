@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+  <link rel="stylesheet" href="./faq.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+</head>
+
+<body>
+  <header id="navbar">
+    <section class="container">
+      <nav class="main-nav">
+        <div class="logo">
+          <a href="../index.html"><img src="./images/bradley-logo.svg" alt="Logo"></a>
+        </div>
+
+        <div class="menu-icon" onclick="togglePopup()"><img src="./images/nav-btn.svg" alt="menu"></div>
+
+      </nav>
+    </section>
+  </header>
+
+  <section id="popupNav">
+    <div id="container-two">
+      <div class="popup-nav">
+        <header>
+          <div class="main-box">
+            <div class="box">
+              <div class="second-logo">
+                <a href="../index.html">     <img src="../home/images/bradley-logo.svg" alt="Logo"></a>
+              </div>
+              <div class="close-icon" onclick="togglePopup()">
+                <img src="./images/popupclose.avif" alt="close-icon">
+              </div>
+            </div>
+          </div>
+        </header>
+        <main>
+          <div class="link-box">
+            <div class="one ">
+              <div class="link-1">
+                <a href="../home/home.html">Home</a>
+              </div>
+              <div class="arrow">
+                <img src="./images/arrow.svg" alt="arrow">
+              </div>
+            </div>
+          </div>
+          <div class="link-box">
+            <div class="one">
+              <div class="link-2">
+                <a href="../about_us/about.html">About</a>
+              </div>
+              <div class="arrow">
+                <img src="./images/arrow.svg" alt="arrow">
+              </div>
+            </div>
+          </div>
+          <div class="link-box">
+            <div class="one">
+              <div class="link-3">
+                <a href="../projects/project.html">Project</a>
+              </div>
+              <div class="arrow">
+                <img src="./images/arrow.svg" alt="arrow">
+              </div>
+            </div>
+          </div>
+          <div class="link-box">
+            <div class="one">
+              <div class="link-4">
+                <a href="faq.html">Faq</a>
+              </div>
+              <div class="arrow">
+                <img src="./images/arrow.svg" alt="arrow">
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <section class="container-3">
+            <div class="footer-content">
+
+              <div class="small-footer">
+
+
+
+                <p class="contact-info">
+                  <span>E-MAIL</span>
+                  <br>
+                  <br>
+                  <a href="mailto:contact@thebpi.com">contact@thebpi.com</a>
+                  <br>
+                  <br>
+                  <a href="mailto:contact@certified-cs.co">contact@certified-cs.co</a>
+                </p>
+                <p class="contact-info-2">
+                  <span>PHONE</span>
+                  <br>
+                  <br>
+                  <span class="number"> +1 615-401-9987</span>
+                </p>
+
+                <button class="contact-button">CONTACT US<i class="fas fa-arrow-right"></i></button>
+
+
+              </div>
+
+            </div>
+          </section>
+        </footer>
+      </div>
+    </div>
+    <div id="contact-form-overlay" class="overlay">
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+
+          <div class="form-group">
+            <input  class="abc" type="text" placeholder="Name" id="name" name="name" required>
+          </div>
+
+
+          <div class="form-group">
+            <input  class="abc" type="email" placeholder="Email:" id="email" name="email" required>
+          </div>
+
+          <input  class="abc" type="number" placeholder="Number:" id="email" name="email" required>
+          <textarea id="message" placeholder="Message:" name="message" required></textarea>
+
+          <button class="contact-button " id="submit">Submit<i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+        <span class="close-button" onclick="closeContactForm()"><img src="./images/popupclose.avif" alt=""></span>
+      </div>
+    </div>
+  </section>
+  <!-- --------------------------------------------main----------------------------------------------- -->
+  <main id="main">
+    <section id="faqs">
+      <div class="faq-image">
+        <img src="./images/banner-faq (1).png" alt="">
+      </div>
+      <div class="accordion">
+        <div class="mainheading">
+          <h1>Our Answer's to Your Questions!</h1>
+        </div>
+        <div id="accordion">
+
+          <h3 class="ques1">1.Does Vertically handle draw money?</h3>
+          <div class="ans1">
+            <p>No, Vertical does not handle money for construction projects.</p>
+
+          </div>
+
+          <h3 class="ques2">2.How much do costs to build a hotel?</h3>
+          <div class="ans2">
+            <p>The short answer is that it depends. Costs are dictated by the project plans and at times the schedule.
+            </p>
+          </div>
+
+
+          <h3 class="ques3">3.What are hard costs in construction?</h3>
+          <div class="ans3">
+            <p>Hard costs in construction are tangible costs that can be quantified and are related to the physical
+              construction. </p>
+
+          </div>
+
+
+          <h3 class="ques4">4.What does a general contractor do?</h3>
+          <div class="ans4">
+            <p>General contractors supervise part or all of a construction project. </p>
+
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+  </main>
+  <footer id="mainfoot" class="top-foot">
+    <div class="foot">
+      <div class="content">
+        <div class="footer-item" id="right">
+          <address>
+            <h4>Address</h4>
+            <p>Karachi, Pakistan</p>
+            <p>1812 Morena Street
+              Nashville, Tennessee 37208</p>
+            <p>CodeGirls:"Vertically Built" </p>
+          </address>
+        </div>
+        <div class="footer-item">
+          <h4>Email</h4>
+          <p><a href="mailto:verticallybuilt@example.com">verticallybuilt@example.com</a></p>
+          <p><a href="mailto:alimaheen2004@gmail.com">alimaheen2004@gmail.com</a></p>
+          <p><a href="mailto:duashehzad@gmail.com">duashehzad@gmail.com</a></p>
+        </div>
+        <div class="footer-item">
+          <h4>Phone</h4>
+          <p><a href="tel:+9232154678">+92 32154678</a></p>
+          <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+          <p><a href="tel:+16154019987">+1 615-401-9987</a></p>
+        </div>
+        <div class="footer-item">
+          <h4>Social</h4>
+          <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div id="logo-logo">
+          <a href="../index.html"><img src="./images/bradley-logo.svg" alt="Company Logo"></a>
+          <p class="small-text">© 2023 Your Company. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- <script src="jquery.js"></script> -->
+  <script src="includes/slick.min.js"></script>
+  <script src="includes/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+  <script src="./faq.js"></script>
+</body>
+
+</html>

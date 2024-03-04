@@ -1,0 +1,452 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+  
+    <title>home page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+
+
+
+
+    <link rel="stylesheet" href="includes/slick.css">
+    <link rel="stylesheet" href="includes/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header id="navbar">
+        <section class="container" id="Main">
+            <nav class="main-nav">
+                <div class="logo">
+                   <a href="../index.html"> <img src="./images/bradley-logo.svg" alt="Logo"></a>
+                </div>
+
+                <div class="menu-icon" onclick="togglePopup()"><img src="./images/nav-btn.svg" alt="menu"></div>
+
+            </nav>
+        </section>
+    </header>
+
+    <section id="popupNav">
+        <div id="container-two">
+            <div class="popup-nav">
+                <header>
+                    <div class="main-box">
+                        <div class="box">
+                            <div class="second-logo">
+                                <a href="../index.html">     <img src="../home/images/bradley-logo.svg" alt="Logo"></a>
+                            </div>
+                            <div class="close-icon" onclick="togglePopup()">
+                                <img src="./images/popupclose.avif" alt="close-icon">
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    <div class="link-box">
+                        <div class="one ">
+                            <div class="link-1">
+                                <a href="home.html">Home</a>
+                            </div>
+                            <div class="arrow">
+                                <img src="./images/arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link-box">
+                        <div class="one">
+                            <div class="link-2">
+                                <a href="../about_us/about.html">About</a>
+                            </div>
+                            <div class="arrow">
+                                <img src="./images/arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link-box">
+                        <div class="one">
+                            <div class="link-3">
+                                <a href="../projects/project.html">Project</a>
+                            </div>
+                            <div class="arrow">
+                                <img src="./images/arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link-box">
+                        <div class="one">
+                            <div class="link-4">
+                                <a href="../faq/faq.html">Faq</a>
+                            </div>
+                            <div class="arrow">
+                                <img src="./images/arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer>
+                    <section class="container-3">
+                        <div class="footer-content">
+
+                            <div class="small-footer">
+
+
+
+                                <p class="contact-info">
+                                    <span>E-MAIL</span>
+                                    <br>
+                                    <br>
+                                    <a href="mailto:contact@thebpi.com">contact@thebpi.com</a>
+                                    <br>
+                                    <br>
+                                    <a href="mailto:contact@certified-cs.co">contact@certified-cs.co</a>
+                                </p>
+                                <p class="contact-info-2">
+                                    <span>PHONE</span>
+                                    <br>
+                                    <br>
+                                    <span class="number"> +1 615-401-9987</span>
+                                </p>
+
+                                <button class="contact-button">CONTACT US<i class="fas fa-arrow-right"></i></button>
+                               
+                            
+                            </div>
+
+                        </div>
+                    </section>
+                </footer>
+            </div>
+        </div>
+        <div id="contact-form-overlay" class="overlay">
+            <div class="contact-form">
+              <h2>Contact Us</h2>
+              <form id="contact-form">
+    
+                <div class="form-group">
+                  <input class="abc" type="text" placeholder="Name" id="name" name="name" required>
+                </div>
+    
+    
+                <div class="form-group">
+                  <input  class="abc" type="email" placeholder="Email:" id="email" name="email" required>
+                </div>
+    
+                <input  class="abc" type="number" placeholder="Number:" id="email" name="email" required>
+                <textarea id="message" placeholder="Message:" name="message" required></textarea>
+    
+                <button class="contact-button " id="submit">Submit<i class="fa-solid fa-arrow-right"></i></button>
+              </form>
+              <span class="close-button" onclick="closeContactForm()"><img src="./images/popupclose.avif" alt=""></span>
+            </div>
+          </div>
+    </section>
+    
+
+    <!-- ----------------------------------main-------------------------------------->
+    <div class="main" id="main">
+        <div class="container">
+            <!-- ---------------section1------------------>
+             <div class="section1">
+                <!-- -------- hero view------>
+                <div class="hero">
+                    <div class="left">
+                        <div class="title">
+                            <h5>NASHVILLE URBAN DESIGN</h5>
+                        </div>
+                        <div class="nav">
+                            <ul>
+                                <li class="li1"><h1>Development</h1><img src="images/arrow.svg" alt=""></li>
+                                <li class="li2"><h1>Architecture</h1><img src="images/arrow.svg" alt=""></li>
+                                <li class="li3"><h1>Construction</h1><img src="images/arrow.svg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                            <div class="active1">
+                                <div class="hero-view">
+                                    <img src="images/a_img5.jpg" alt="">
+                                </div>
+                                <div class="hero-view-icon">
+                                    <img src="images/logo.svg" alt="">
+                                </div>
+                                <div class="hero-view-text">
+                                    <div class="text-left">
+                                        <div class="text1">
+                                            <h5>The Bardley Development Group</h5>
+                                        </div>
+                                        <div class="text2">
+                                            <h2>Development</h2>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <a href="otherhtml/dev.html"><button class="btn1"><i class="fa-solid fa-arrow-right"></i>SEE PROJECTS</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="active2">
+                                <div class="hero-view">
+                                    <img src="images/a_img6.jpg" alt="">
+                                </div>
+                                <div class="hero-view-icon">
+                                    <img src="images/logo.svg" alt="">
+                                </div>
+                                <div class="hero-view-text">
+                                    <div class="text-left">
+                                        <div class="text1">
+                                            <h5>The Bardley projects</h5>
+                                        </div>
+                                        <div class="text2">
+                                            <h2>Architecture</h2>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        <a href="otherhtml/arc.html"><button class="btn1"><i class="fa-solid fa-arrow-right"></i>SEE PROJECTS</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="active3">
+                                <div class="hero-view">
+                                    <img src="images/a_img7.jpg" alt="">
+                                </div>
+                                <div class="hero-view-icon">
+                                    <img src="images/logo.svg" alt="">
+                                </div>
+                                <div class="hero-view-text">
+                                    <div class="text-left">
+                                        <div class="text1">
+                                            <h5>Certified Construction Services</h5>
+                                        </div>
+                                        <div class="text2">
+                                            <h2>Construction</h2>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                       <a href="otherhtml/cons.html"> <button class="btn1"><i class="fa-solid fa-arrow-right"></i>SEE PROJECTS</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+            </div>
+            <!-- ------------section2------------------- -->
+            <div class="section2">
+                <div class="text_b">
+                    <div class="text1">
+                        <h2>Capabilities & Services</h2>
+                        <p>Award winning design & development</p>
+                    </div>
+                    <a href="../about_us/about.html"><button class="btn2"><i class="fa-solid fa-arrow-right"></i>ABOUT US</button></a>
+                </div>
+                <!-- ---------------------boxes--------------- -->
+                <div class="content">
+                 <div class="boxes">
+                    <div class="box">
+                        <div class="texts">
+                            <p>Acquisition & Planning</p>
+                        </div>
+                        <div class="num">
+                            <img src="images/num_1.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="texts">
+                            <p>Equity & Financing</p>
+                        </div>
+                        <div class="num">
+                            <img src="images/num_2.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="texts">
+                            <p>Architectural & Engineering</p>
+                        </div>
+                        <div class="num">
+                            <img src="images/num_3.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="texts">
+                            <p>Full Construction Services</p>
+                        </div>
+                        <div class="num">
+                            <img src="images/num_4.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="texts">
+                            <p>Asset Delivery</p>
+                        </div>
+                        <div class="num">
+                            <img src="images/num_5.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="box ">
+                        <div class="large">
+                        <div class="texts ">
+                            <p><b>Design, Build & Develop </b>own projects</p>
+                        </div>
+                    </div>
+                        
+                    </div>
+                </div> 
+                
+            </div>
+            <div class="text_b">
+                <div class="text1">
+                    <h2>Recent Projects</h2>
+                    <p> Over<b> $1 Billion</b> in projects completed.</p>
+                </div>
+                <button class="btn2"><i class="fa-solid fa-arrow-right"></i>All projects</button>
+            </div>
+            </div>
+            <!-- ------------section3--------- -->
+            <!-- -----------slider------------ -->
+            <div class="section3" >
+                <div class="slider">
+                    
+                    <div class="slide">
+                        <img src="images/img1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/img2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/img3.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/img4.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/img5.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/img6.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/img7.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/img8.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!-- ----------------------------section4-------------------- -->
+        <div class="form">
+            <div class="Form">
+        
+                <form id="propertyForm" class="content-container">
+                    <div class="tes">
+                    <h2>Sell your Property</h2></div>
+                    <div class="fi">
+                        <div class="image-form">
+                            <img src="../projects/prjs/image.png" alt="">
+                            <div class="pic">
+                                <input type="file" name="picture" id="pic">
+                            </div>
+                        </div>
+                        <p class="pointo">upload images of your property</p>
+                    </div>
+                   <div class="form-content">
+                        <div class="form-group">
+                            <label for="fullName" class="point">Full Name</label>
+                            <input   class="abc" type="text" id="fullName" name="name" required>
+                        </div>
+                        <!-- <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div> -->
+                        <div class="form-group">
+                            <label for="phoneNumber" class="point">Phone Number</label>
+                            <input  class="abc" type="tel" id="phoneNumber" name="number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city" class="point">City</label>
+                            <select id="city" name="city">
+                                <option value="none" disabled selected>Select a city</option>
+                                <option value="city1" class="point">Karachi</option>
+                                <option value="city2" class="point">Lahore</option>
+                                <option value="city3" class="point">Islamabad</option>
+                                <option value="city3" class="point">punjab</option>
+                                <option value="city3" class="point">Sialkot</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="location" class="point">Location of Plot/house</label>
+                            <input  class="abc" type="text" id="location" name="location">
+                        </div>
+                     
+                        <div class="cheak">
+                            <input  class="abc" type="checkbox" name="check">
+                            <p class="pointo">I Accept All Their Company Policies</p>
+                        </div>
+                        <button type="submit" class="submit-button">Submit</button>
+                    </div>
+                </form>
+        </div>
+    </div>  
+    <!-- -------------------------footer-------------------------- -->
+    <footer id="mainfoot">
+        <div class="foot">
+            <div class="content">
+                <div class="footer-item" id="right">
+                    <address>
+                        <h4>Address</h4>
+                    <p>Karachi, Pakistan</p>
+                    <p>1812 Morena Street
+                        Nashville, Tennessee 37208</p>
+                    <p>CodeGirls:"Vertically Built" </p>
+                    </address>
+                </div>
+                <div class="footer-item">
+                    <h4>Email</h4>
+                    <p><a href="mailto:verticallybuilt@example.com">verticallybuilt@example.com</a></p>
+                    <p><a href="mailto:alimaheen2004@gmail.com">alimaheen2004@gmail.com</a></p>
+                    <p><a href="mailto:duashehzad@gmail.com">duashehzad@gmail.com</a></p>
+                </div>
+                <div class="footer-item">
+                    <h4>Phone</h4>
+                    <p><a href="tel:+9232154678">+92 32154678</a></p>
+                    <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+                    <p><a href="tel:+16154019987">+1 615-401-9987</a></p>
+                </div>
+                <div class="footer-item">
+                    <h4>Social</h4>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div id="logo-logo">
+                    <a href="../index.html"><img src="./images/bradley-logo.svg" alt="Company Logo"></a>
+                    <p class="small-text">© 2023 Your Company. All rights reserved.</p>
+                </div> 
+            </div>
+        </div>
+        <button class="btn2" id="scrollToMain"><i class="fa-solid fa-arrow-up"></i>Scroll up</button>
+    </footer>
+    <script src="includes/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

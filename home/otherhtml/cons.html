@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <main>
+        <section>
+             <!-- **********************header******************************************* -->
+    <header id="navbar">
+        <section class="container">
+            <nav class="main-nav">
+                <div class="logo">
+                    <a href="../../index.html"><img src="images/bradley-logo.svg" alt="Logo"></a>
+                </div>
+
+                <div class="menu-icon" onclick="togglePopup()"><img src="images/nav-btn.svg" alt="menu"></div>
+
+            </nav>
+        </section>
+    </header>
+
+    <section id="popupNav">
+        <div id="container-two">
+            <div class="popup-nav">
+                <header>
+                    <div class="main-box">
+                        <div class="boxs">
+                            <div class="second-logo">
+                                <img src="images/bradley-logo.svg" alt="Logo">
+                            </div>
+                            <div class="close-icon" onclick="togglePopup()">
+                                <img src="../images/popupclose.avif" alt="close-icon">
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <main>
+                    <div class="link-box">
+                        <div class="one ">
+                            <div class="link-1">
+                                <a href="../../home/home.html">Home</a>
+                            </div>
+                            <div class="arrow">
+                                <img src="images/arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link-box">
+                        <div class="one">
+                            <div class="link-2">
+                                <a href="../../about_us/about.html">About</a>
+                            </div>
+                            <div class="arrow">
+                                <img src="images/arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link-box">
+                        <div class="one">
+                            <div class="link-3">
+                                <a href="../../projects/project.html">Project</a>
+                            </div>
+                            <div class="arrow">
+                                <img src="images/arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link-box">
+                        <div class="one">
+                            <div class="link-4">
+                                <a href="../../faq/faq.html">Faq</a>
+                            </div>
+                            <div class="arrow">
+                                <img src="images/arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer>
+                    <section class="container-3">
+                        <div class="footer-content">
+
+                            <div class="small-footer">
+
+
+
+                                <p class="contact-info">
+                                    <span>E-MAIL</span>
+                                    <br>
+                                    <br>
+                                    <a href="mailto:contact@thebpi.com">contact@thebpi.com</a>
+                                    <br>
+                                    <br>
+                                    <a href="mailto:contact@certified-cs.co">contact@certified-cs.co</a>
+                                </p>
+                                <p class="contact-info-2">
+                                    <span>PHONE</span>
+                                    <br>
+                                    <br>
+                                    <span class="number"> +1 615-401-9987</span>
+                                </p>
+
+                                <button class="contact-button">CONTACT US<i class="fas fa-arrow-right"></i></button>
+                               
+                            
+                            </div>
+
+                        </div>
+                    </section>
+                </footer>
+            </div>
+        </div>
+        <div id="contact-form-overlay" class="overlay">
+            <div class="contact-form">
+              <h2>Contact Us</h2>
+              <form id="contact-form">
+    
+                <div class="form-group">
+                  <input  class="abc" type="text" placeholder="Name" id="name" name="name" required>
+                </div>
+    
+    
+                <div class="form-group">
+                  <input  class="abc" type="email" placeholder="Email:" id="email" name="email" required>
+                </div>
+    
+                <input  class="abc" type="number" placeholder="Number:" id="email" name="email" required>
+                <textarea id="message" placeholder="Message:" name="message" required></textarea>
+    
+                <button class="contact-button " id="submit">Submit<i class="fa-solid fa-arrow-right"></i></button>
+              </form>
+              <span class="close-button" onclick="closeContactForm()"><img src="../images/popupclose.avif" alt=""></span>
+            </div>
+          </div>
+    </section>
+    <!-- ----------------------------------main-------------------------------------- -->
+            <div class="container-gallery" id="main">
+                <div class="head">
+                    <div class="textleft">
+                        <h1>Construction</h1>
+                    </div>
+                    <div class="textright">
+                        <button class="btn1" id="scrollToMap"><i class="fa-solid fa-arrow-down"></i>Location Map</button>
+                    </div>
+
+                </div>
+                <div class="con-1">
+              
+
+                
+                    <div id="box-2">
+                           <div class="img1">
+                            <img src="images/img1.jpg" alt="">
+                           </div>
+                           <div class="text">
+                            <h2>Alina</h2>
+                            <p>806 Olympics st Nasville,USA</p>
+                           </div>
+                    </div>
+                    <div id="box-1">
+                        <div class="img2">
+                            <img src="images/img2.jpg" alt="">
+                           </div>
+                        <div class="text">
+                            <h2>Luna</h2>
+                            <p>702, st Nasville,USA</p>
+                           </div>
+                    </div>
+               
+
+                </div>
+                <div class="con-2">
+                
+                    <div id="box-1">
+                        <div class="img3">
+                            <img src="images/img3.jpg" alt="">
+                        </div>
+                    
+                        <div class="text">
+                            <h2>Ilume</h2>
+                            <p> astyne st Nasville,USA</p>
+                           </div>
+                    </div>
+                    <div id="box-2">
+                        <div class="img4">
+                            <img src="images/img4.jpg" alt="">
+                        </div>
+                    
+                        <div class="text">
+                            <h2>Clay street</h2>
+                            <p>clay street USA,809</p>
+                        </div>
+                    </div>
+               
+
+                </div>
+                <div class="con-3">
+                
+                    <div id="box-2">
+                        <div class="img5">
+                            <img src="images/img5.jpg" alt="">
+                           </div>
+                        <div class="text">
+                            <h2>Eve</h2>
+                            <p>7806 Street Nasville,USA</p>
+                           </div>
+                    </div>
+                    <div id="box-1">
+                        <div class="img6">
+                            <img src="images/img6.jpg" alt="">
+                           </div>
+                        <div class="text">
+                            <h2>Ophelia</h2>
+                            <p>406 clurgy st Nasville,USA</p>
+                           </div>
+                    </div>
+               
+
+                </div>
+                <div class="con-4">
+                    
+                    <div id="box-1">
+                        <div class="img7">
+                            <img src="images/img7.jpg" alt="">
+                           </div>
+                        <div class="text">
+                            <h2>Fisks</h2>
+                            <p>8062 cludy st urbaan,USA</p>
+                           </div>
+                    </div>
+                    <div id="box-2">
+                        <div class="img8">
+                            <img src="images/img8.jpg" alt="">
+                           </div>
+                        <div class="text">
+                            <h2>Boyd House</h2>
+                            <p>8061 Mehary st Nasville,USA</p>
+                           </div>
+                    </div>
+               
+
+                </div>
+                <div class="texts">
+                    <div class="textleft">
+                        <h1>Location Map</h1>
+                    </div>
+                    <div class="textright">
+                        <p>Discover our best projects</p>
+                    </div>
+
+                </div>
+                <div class="map" id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462118.02491053584!2d67.15546194999999!3d25.193202399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sKarachi%2C%20Karachi%20City%2C%20Sindh!5e0!3m2!1sen!2s!4v1692170334226!5m2!1sen!2s" width="1200" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+            </div> 
+        </section>
+    </main>
+     <!-- ----------------------------------------------------------footer------------------------------------ -->
+     <footer id="mainfoot">
+        <div class="foot">
+            <div class="content">
+                <div class="footer-item" id="right">
+                    <address>
+                        <h4>Address</h4>
+                    <p>Karachi, Pakistan</p>
+                    <p>1812 Morena Street
+                        Nashville, Tennessee 37208</p>
+                    <p>CodeGirls:"Vertically Built" </p>
+                    </address>
+                </div>
+                <div class="footer-item">
+                    <h4>Email</h4>
+                    <p><a href="mailto:verticallybuilt@example.com">verticallybuilt@example.com</a></p>
+                    <p><a href="mailto:alimaheen2004@gmail.com">alimaheen2004@gmail.com</a></p>
+                    <p><a href="mailto:duashehzad@gmail.com">duashehzad@gmail.com</a></p>
+                </div>
+                <div class="footer-item">
+                    <h4>Phone</h4>
+                    <p><a href="tel:+9232154678">+92 32154678</a></p>
+                    <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+                    <p><a href="tel:+16154019987">+1 615-401-9987</a></p>
+                </div>
+                <div class="footer-item">
+                    <h4>Social</h4>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div id="logo-logo">
+                    <a href="../../index.html"><img src="images/bradley-logo.svg" alt="Company Logo"></a>
+                    <p class="small-text">© 2023 Your Company. All rights reserved.</p>
+                </div> 
+            </div>
+        </div>
+    </footer>
+  
+    <script src="script.js"></script>
+</body>
+</html> 
+
